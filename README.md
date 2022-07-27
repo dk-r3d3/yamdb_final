@@ -24,8 +24,8 @@ python -m venv venv
 pytest
 ```
 
-Отредактируйте файл nginx/default.conf и в строке server_name впишите IP виртуальной машины (сервера).
-Скопируйте подготовленные файлы docker-compose.yaml и nginx/default.conf из вашего проекта на сервер:
+Отредактируйте файл `nginx/default.conf` и в строке `server_name` впишите IP виртуальной машины (сервера).
+Скопируйте подготовленные файлы `docker-compose.yaml` и `nginx/default.conf` из вашего проекта на сервер:
 
 ```
 scp [файл, который хотите скопировать] [name@public_id:/путь к файлу на сервере/]
