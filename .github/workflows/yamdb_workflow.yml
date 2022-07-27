@@ -99,16 +99,16 @@ jobs:
               sudo docker-compose up -d
 
         - name: Send message if Tests failed
-        if: ${{ failure() }}
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-            ${{ steps.run_test.outcome }}
-            ${{ steps.run_test.conclusion }}
-            Ошибка при деплое проекта на гит - ${{ github.repository }}
-            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          if: ${{ failure() }}
+          uses: appleboy/telegram-action@master
+          with:
+            to: ${{ secrets.TELEGRAM_TO }}
+            token: ${{ secrets.TELEGRAM_TOKEN }}
+            message: |
+              ${{ steps.run_test.outcome }}
+              ${{ steps.run_test.conclusion }}
+              Ошибка при деплое проекта на гит - ${{ github.repository }}
+              https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
   send_message:
       runs-on: ubuntu-latest
