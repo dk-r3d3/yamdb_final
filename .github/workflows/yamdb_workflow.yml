@@ -61,7 +61,7 @@ jobs:
           with:
             push: true
             context: ./api_yamdb/
-            tags: dkr3d3/yamdb_final:v1.07.2022
+            tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:v1.07.2022
         
         - name: Send message if Tests failed
           if: ${{ failure() }}
