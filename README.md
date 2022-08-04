@@ -40,7 +40,6 @@ scp [файл, который хотите скопировать] [name@public_
 
 Зайдите в репозиторий на локальной машине и отправьте файлы на сервер.
 
-
 В репозитории GitHub добавьте данные в `Actions secrets`:
 
 ```
@@ -60,3 +59,37 @@ DB_NAME - postgres (по умолчанию)
 POSTGRES_USER - postgres (по умолчанию)
 POSTGRES_PASSWORD - postgres (по умолчанию)
 ```
+
+## Запуск проекта на сервере:
+
+Установите Docker:
+```
+sudo apt install docker.io
+```
+Установите Docker-compose(Инструкция для Ubuntu):
+
+https://docs.docker.com/engine/install/ubuntu/
+
+### Деплой проекта на сервер:
+```
+git add .
+git commit -m "..."
+git push
+```
+команда `git push` запустит блок команд yamdb_workflow.yaml
+
+### После успешного деплоя:
+
+Создайте суперпользователя:
+```
+docker-compose exec web python manage.py createsuperuser
+
+```
+
+### Работу с API осуществлять согласно документации:
+
+http://130.193.34.205/redoc/
+
+### Автор: 
+
+Copyright © 2022 Dmitry Koroteev. All rights reserved.
