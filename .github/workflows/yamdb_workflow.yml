@@ -89,7 +89,7 @@ jobs:
             script: |
               sudo docker-compose stop
               sudo docker compose down -v
-              sudo docker rmi dkr3d3/yamdb
+              sudo docker rmi dkr3d3/yamdb_final
               touch .env
               echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
               echo DB_NAME=${{ secrets.DB_NAME }} >> .env
