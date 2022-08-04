@@ -8,7 +8,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: dkr3d3/yamdb_final:latest
+    image: dkr3d3/yamdb_final:v1.08.22
     restart: always
     volumes:
       - static_value:/app/static/

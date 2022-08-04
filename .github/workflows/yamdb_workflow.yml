@@ -61,7 +61,7 @@ jobs:
           with:
             push: true
             context: ./api_yamdb
-            tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:v1.07.2022
+            tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:v1.08.22
         
         - name: Send message if Tests failed
           if: ${{ failure() }}
@@ -89,7 +89,7 @@ jobs:
             script: |
               sudo docker-compose stop
               sudo docker-compose down -v
-              sudo docker rmi dkr3d3/yamdb_final
+              sudo docker rmi dkr3d3/yamdb_final:v1.08.22
               touch .env
               echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
               echo DB_NAME=${{ secrets.DB_NAME }} >> .env
