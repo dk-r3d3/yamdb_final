@@ -1,7 +1,7 @@
 # CI и CD проекта API_YAMDB
 
 [![Django-app workflow](https://github.com/dk-r3d3/yamdb_final/actions/workflows/yamdb_workflows.yml/badge.svg)](https://github.com/dk-r3d3/yamdb_final/actions/yamdb_workflows/main.yml)
-
+![example workflow](https://github.com/dk-r3d3/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 ### В данном проекте реализованы:
 
 - автоматический запуск тестов;
