@@ -1,12 +1,13 @@
 # CI и CD проекта API_YAMDB
 [![Django-app workflow](https://github.com/dk-r3d3/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/dk-r3d3/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
-###Проект на сервере/админка:
+### Проект на сервере/админка:
 http://130.193.34.205/api/v1/
 http://130.193.34.205/admin/login/?next=/admin/
 
-###Документация API_YAMDB:
+### Документация API_YAMDB:
 http://130.193.34.205/redoc/
+
 ### В данном проекте реализованы:
 
 - автоматический запуск тестов;
