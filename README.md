@@ -1,6 +1,6 @@
 # CI и CD проекта API_YAMDB
 
-![example workflow](https://github.com/dk-r3d3/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![example workflow](https://github.com/dk-r3d3/yamdb_final/actions/badge.svg)
 
 ### В данном проекте реализованы:
 
