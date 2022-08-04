@@ -1,6 +1,6 @@
 # CI и CD проекта API_YAMDB
 
-![Django-app workflow](https://github.com/dk-r3d3/yamdb_final/actions/workflows/badge.svg)
+![Django-app workflow](https://github.com/dk-r3d3/yamdb_final/actions/badge.svg)
 
 ### В данном проекте реализованы:
 
