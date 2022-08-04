@@ -8,7 +8,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: dkr3d3/yamdb_final:v1.08.22
+    image: dkr3d3/yamdb_final:latest
     restart: always
     volumes:
       - static_value:/app/static/
@@ -28,7 +28,6 @@ services:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - static_value:/var/html/static/
       - media_value:/var/html/media/
-      - ../api_yamdb/static/redoc.yaml:/var/html/static/redoc.yaml
 
     depends_on:
       - web
