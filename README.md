@@ -2,6 +2,9 @@
 
 
 [![example workflow](https://github.com/dk-r3d3/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)(https://github.com/dk-r3d3/yamdb_final/actions)]
+
+[![Django-app workflow](https://github.com/DeffronMax/yamdb_final/actions/badge.svg)](https://github.com/DeffronMax/yamdb_final/actions/)
+
 ### В данном проекте реализованы:
 
 - автоматический запуск тестов;
