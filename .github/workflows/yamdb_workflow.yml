@@ -60,7 +60,7 @@ jobs:
           uses: docker/build-push-action@v2 
           with:
             push: true
-            context: ./api_yamdb/
+            context: ./api_yamdb
             tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:v1.07.2022
         
         - name: Send message if Tests failed
